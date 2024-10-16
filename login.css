@@ -1,0 +1,153 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #009FFF, #00BFFF); /* Bright blue to aqua */
+    display: flex;
+    flex-direction: column; /* Ensure body elements stack vertically */
+    min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; /* Ensure navbar is above other elements */
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffc371; /* Color change on hover */
+}
+
+/* Wrapper and Content Styling */
+.wrapper {
+    flex: 1; /* Take up remaining vertical space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Centered Login Container */
+.login-container {
+    flex: 1; /* Allow container to grow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Increased space between the two login forms */
+}
+
+/* Login Card Styles */
+.login-card {
+    background: rgba(255, 255, 255, 0.95); /* Slightly more opaque */
+    border-radius: 15px;
+    padding: 40px;
+    width: 350px; /* Fixed width for uniformity */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    border: 2px solid #00BFFF; /* Vibrant border for the card */
+}
+
+/* Title and Paragraph Styles */
+.login-card h2 {
+    color: #2A2A72; /* Darker color for contrast */
+    margin-bottom: 10px; /* Increased margin for better spacing */
+    font-size: 2rem; /* Uniform font size for both titles */
+}
+
+.login-card p {
+    color: #555; /* Dark gray for better readability */
+    margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+/* Form Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #00BFFF; /* Vibrant border */
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #009FFF; /* Change border color on focus */
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    background: linear-gradient(45deg, #00BFFF, #00FFB3);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+    background: linear-gradient(45deg, #00FFB3, #00BFFF);
+    transform: scale(1.05);
+}
+
+/* Links Below Login */
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px; /* Increased margin for better spacing */
+}
+
+.login-links a {
+    color: #00BFFF; /* Vibrant color for links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.login-links a:hover {
+    color: #009FFF; /* Darker color on hover */
+}
+
+/* Footer Styles */
+.footer {
+    width: 100%; /* Ensure footer spans the full width */
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 0.9rem;
+}

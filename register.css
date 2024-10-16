@@ -1,0 +1,136 @@
+/* Wrapper to center the content */
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3f51b5, #1de9b6);
+}
+
+/* Register content container */
+.register-content {
+  display: flex;
+  gap: 20px; /* Add space between the cards */
+  width: 80%; /* Responsive width */
+  max-width: 900px;
+}
+
+/* Individual card styling */
+.register-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 40px;
+  width: 48%; /* Adjust for side-by-side alignment */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+/* Hover effect on cards */
+.register-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading styles */
+.register-card h2 {
+  color: #ff4081;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+/* Paragraph text */
+.register-card p {
+  color: #3f51b5;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 2px solid #00e5ff;
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #ff79b0;
+}
+
+/* Register buttons */
+.register-btn {
+  background: linear-gradient(45deg, #1de9b6, #1dc4c1);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.register-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #ff79b0, #1dc4c1);
+}
+
+/* Footer styling */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer p {
+  margin: 0;
+  color: #3f51b5;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar .logo a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .register-content {
+      flex-direction: column;
+  }
+
+  .register-card {
+      width: 100%;
+  }
+}

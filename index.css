@@ -1,0 +1,85 @@
+
+/* Index Styles */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px; /* Increased padding for better spacing */
+    gap: 30px; /* Increased gap between cards */
+}
+
+.card {
+    background: linear-gradient(135deg, #FF79B0, #FF6F61); /* Bold pink gradient */
+    border-radius: 20px; /* More rounded corners */
+    padding: 30px; /* Increased padding for better content spacing */
+    width: 320px; /* Adjusted width */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); /* Deeper shadow for more depth */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s; /* Added transition for background */
+    position: relative; /* For pseudo-element effects */
+    overflow: hidden; /* Prevent overflow of pseudo-elements */
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)); /* Frosted glass effect */
+    opacity: 0.3; /* Transparency */
+    z-index: 1; /* Behind card content */
+    border-radius: 20px; /* Match card corners */
+    transition: opacity 0.3s; /* Transition for hover effect */
+}
+
+.card:hover:before {
+    opacity: 0.5; /* Increase opacity on hover */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+}
+
+.card h3 {
+    color: #fff; /* White text for better contrast */
+    margin-bottom: 10px;
+    font-size: 1.6rem; /* Slightly larger font size */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.card p {
+    color: #fff; /* Change text color to white */
+    margin-bottom: 15px;
+    font-size: 1rem; /* Slightly larger for better readability */
+}
+
+.card .btn {
+    background: linear-gradient(45deg, #00BFFF, #6A5ACD); /* Blue to purple gradient */
+    color: white;
+    padding: 12px 20px; /* Increased padding for button */
+    border: none;
+    border-radius: 12px; /* More rounded button */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: background 0.3s, transform 0.2s; /* Button transitions */
+    position: relative; /* Positioning for effects */
+    z-index: 2; /* Above pseudo-element */
+}
+
+.card .btn:hover {
+    background: linear-gradient(45deg, #6A5ACD, #00BFFF); /* Inverted gradient on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker footer for better contrast */
+    color: white;
+    text-align: center;
+    padding: 25px; /* Increased footer padding */
+    font-size: 1rem; /* Larger font for better readability */
+}

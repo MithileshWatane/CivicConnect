@@ -1,0 +1,201 @@
+/* Community Page Styles */
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc, #5f27cd);
+    background-size: 300% 300%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff;
+    font-family: 'Arial', sans-serif; /* Updated font for better readability */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+}
+
+/* Navbar Logo and Links */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffdd00; /* Bright yellow for visibility on hover */
+}
+
+/* Section Styles */
+section {
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    max-width: 800px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Community Section */
+.community-section {
+    text-align: center;
+}
+
+.community-section h2 {
+    margin-bottom: 1rem;
+    color: #ffdd00; /* Bright yellow for visibility */
+}
+
+.community-section p {
+    margin-bottom: 2rem;
+}
+
+/* Call to Action Button */
+.cta-button {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s; /* Added transform for hover */
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Crowdfunding Section */
+.crowdfunding-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.crowdfunding-section label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.crowdfunding-section input,
+.crowdfunding-section textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.2); /* Slightly lighter background */
+    color: #fff;
+}
+
+.crowdfunding-section input::placeholder,
+.crowdfunding-section textarea::placeholder {
+    color: #ddd; /* Light color for placeholders */
+}
+
+.crowdfunding-section .btn {
+    margin-top: 1rem;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; /* Added transform for hover */
+}
+
+.crowdfunding-section .btn:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Monitoring Section */
+.monitoring-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-card {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.progress-bar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 8px;
+    background: #ffdd00; /* Bright yellow for visibility */
+}
+
+/* Chat Feature Section */
+.chat-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.chat-box textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.chat-history {
+    max-height: 200px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.chat-history p {
+    margin: 5px 0;
+}
+
+/* Keyframes for background animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 1rem;
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack navbar items on small screens */
+        gap: 1rem;
+    }
+}

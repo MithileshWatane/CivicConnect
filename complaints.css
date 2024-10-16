@@ -1,0 +1,160 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #00aaff, #0088cc, #005577); /* Sky-themed gradient */
+  background-size: 300% 300%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff; /* White for better visibility */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #ffffff; /* White for links */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffdd00; /* Bright yellow on hover for contrast */
+}
+
+/* Complaint Page Styles */
+.complaint-form {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.complaint-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #ffffff; /* White for better visibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.complaint-form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  color: #ffffff; /* White for labels */
+}
+
+.complaint-form textarea,
+.complaint-form input,
+.complaint-form select {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 2px solid #ffffff; /* White border */
+  transition: border 0.3s;
+}
+
+.complaint-form textarea:focus,
+.complaint-form input:focus,
+.complaint-form select:focus {
+  border-color: #0088cc; /* Bright blue border on focus */
+  outline: none;
+}
+
+.complaint-form .btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #005577, #0088cc); /* Dark to light blue gradient */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.complaint-form .btn:hover {
+  background: linear-gradient(45deg, #0088cc, #005577); /* Reverse gradient on hover */
+  transform: translateY(-3px); /* Raise effect on hover */
+}
+
+/* File Input Button Styles */
+.complaint-form input[type="file"] {
+  padding: 12px;
+  border-radius: 5px;
+  border: 2px solid #ffffff; /* White border */
+  background: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
+  color: #ffffff; /* White text */
+  cursor: pointer;
+  transition: background 0.3s, border 0.3s;
+}
+
+.complaint-form input[type="file"]:hover {
+  background: rgba(0, 0, 0, 0.7); /* Darker on hover */
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  margin-top: 20px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Keyframes for background animation */
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .complaint-form {
+      padding: 20px;
+  }
+}

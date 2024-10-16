@@ -1,0 +1,171 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #009FFF, #2A2A72); /* Bright blue to deep teal */
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Trending Issues Section */
+.trending-section {
+    padding: 4rem 2rem; /* Increased padding for more space */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* More opaque black for better contrast */
+    border-radius: 10px; /* Rounded corners */
+    margin: 2rem auto; /* Center the section with margin */
+    max-width: 1200px; /* Limit maximum width */
+}
+
+.trending-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #76ff03; /* Bright green for heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for depth */
+}
+
+/* Unique Color Palettes for Issue Cards */
+.issue-card-container {
+    display: flex;
+    justify-content: center; /* Center align cards */
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+    gap: 1.5rem; /* Space between cards */
+}
+
+.issue-card {
+    padding: 2rem; /* Increased padding for better readability */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px; /* Rounded corners */
+    width: 280px; /* Wider card for better visibility */
+    text-align: left;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation on hover */
+}
+
+/* Specific Background Colors for Each Card */
+.issue-card:nth-child(1) {
+    background: linear-gradient(135deg, #ffdd00, #ff4b1f); /* Yellow to Red */
+}
+
+.issue-card:nth-child(2) {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Light Blue to Dark Blue */
+}
+
+.issue-card:nth-child(3) {
+    background: linear-gradient(135deg, #00b09b, #96c93d); /* Teal to Lime Green */
+}
+
+.issue-card:nth-child(4) {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3); /* Pink to Light Pink */
+}
+
+.issue-card:nth-child(5) {
+    background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Coral to Peach */
+}
+
+.issue-card:nth-child(6) {
+    background: linear-gradient(135deg, #a8e0ff, #fbab60); /* Light Blue to Soft Orange */
+}
+
+.issue-card:nth-child(7) {
+    background: linear-gradient(135deg, #b9fbc0, #a0c3d2); /* Mint to Sky Blue */
+}
+
+.issue-card:nth-child(8) {
+    background: linear-gradient(135deg, #fbc2eb, #a18cd1); /* Light Pink to Lavender */
+}
+
+.issue-card:hover {
+    transform: translateY(-5px); /* Raise effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.issue-card h3 {
+    font-size: 1.7rem; /* Increased font size for better visibility */
+    color: #1d3557; /* Darker cool color for heading */
+    margin-bottom: 0.5rem;
+}
+
+.issue-card p {
+    color: #ffffff; /* Change to white for better contrast */
+    margin-bottom: 1.5rem; /* Increased margin for spacing */
+    font-size: 1.2rem; /* Increased font size for better readability */
+    font-weight: bold; /* Make it bold for emphasis */
+    background: rgba(255, 255, 255, 0.2); /* Light background to improve visibility */
+    padding: 0.5rem; /* Add some padding for spacing */
+    border-radius: 5px; /* Rounded corners for the background */
+}
+
+.cta-button {
+    background: linear-gradient(90deg, #00b4d8, #0077b6); /* Cool gradient for the button */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.3s; /* Smooth transition */
+    display: inline-block; /* Ensures proper button spacing */
+}
+
+.cta-button:hover {
+    background: linear-gradient(90deg, #0096c7, #005f73); /* Darker cool gradient on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .issue-card-container {
+        flex-direction: column;
+        align-items: center; /* Center align on small screens */
+    }
+
+    .issue-card {
+        margin-bottom: 2rem; /* Space between cards */
+        width: 90%; /* Full width on small screens */
+    }
+}
+body {
+    /* Light, colorful gradient background */
+    background: linear-gradient(135deg, #a2c2e3, #e2c2a2, #a2e3c2, #e3a2c2, #c2a2e3); /* Soft pastel colors */
+    background-size: 300% 300%; /* Ensure large enough area for animation */
+    animation: gradientAnimation 15s ease infinite; /* Add animation */
+    color: #333; /* Darker text color for better readability on light background */
+    line-height: 1.6;
+}
+
+/* Keyframes for background animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Update trending section */
+.trending-section {
+    padding: 4rem 2rem; /* Increased padding for more space */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Light white background for the section */
+    border-radius: 10px; /* Rounded corners */
+    margin: 2rem auto; /* Center the section with margin */
+    max-width: 1200px; /* Limit maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+}
+
+.trending-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333; /* Dark text color for better contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+}
